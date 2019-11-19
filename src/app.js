@@ -4,13 +4,14 @@ import { hot } from 'react-hot-loader';
 const Warning = React.lazy(() => import('./warning'));
 class App extends React.Component {
   state = {
-    count: 0
+    count: 0,
   };
 
   render() {
     return (
       <div>
         <h1>This is Jato's React boilerplate.</h1>
+        <img src="./logo.png" alt="logo" />
         <h2 className={this.state.count > 10 ? 'warning' : null}>
           Count: {this.state.count}
         </h2>
