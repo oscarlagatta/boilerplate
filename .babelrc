@@ -7,9 +7,11 @@
         "useBuiltIns": "entry"
       }
     ],
-    "@babel/preset-react"
+    "@babel/preset-react",
+    "@emotion/babel-preset-css-prop"
   ],
   "plugins": [
+    "emotion",
     "@babel/plugin-proposal-class-properties",
     "react-hot-loader/babel",
     "@babel/plugin-syntax-dynamic-import"
